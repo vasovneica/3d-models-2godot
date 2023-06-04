@@ -1,7 +1,6 @@
 {
   "name": "front_end_lps",
   "version": "0.1.0",
-  "homepage": "https://vasovneica.github.io/3d-models-2godot",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
