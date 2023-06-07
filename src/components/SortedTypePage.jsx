@@ -30,9 +30,11 @@ let title;
   }, [group])
   console.log("sorted");
 
-   if (isPostsLoading){
-   
-    return( <Loader/>);
+  if (isPostsLoading){
+    return (<>
+    <Loader/>
+    </>)
+    
    }
    else{
     return(
@@ -40,7 +42,7 @@ let title;
         <main class="main-content">
         <div class="cards-section">
 
-        {(isPostsLoading ? [...Array(5)] : posts.items).map((obj, index) =>
+        {(isPostsLoading ? [...Array()] : posts.items).map((obj, index) =>
             isPostsLoading ? (<ItemCard key={index} isLoading={isPostsLoading} />) : (
               <div class="card-wrap">
               <ItemCard
@@ -72,4 +74,4 @@ let title;
 
     );
 }
-}
+ }

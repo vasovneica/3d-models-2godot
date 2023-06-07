@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchPosts } from "../redux/slices/posts";
 import { Loader } from "./Loader";
 
+
+
 export const MainContent=()=>{
 
 
@@ -37,10 +39,11 @@ let title;
    else{
     return(
         <>
-        <main class="main-content">
-        <div class="cards-section">
-            
-        {(isPostsLoading ? [...Array(9)] : posts.items).map((obj, index) =>
+        
+        <main className="main-content">
+        <div className="cards-section">
+       
+        {(isPostsLoading ? [...Array()] : posts.items).map((obj, index) =>
             isPostsLoading ? (<ItemCard key={index} isLoading={isPostsLoading} />) : (
               <div class="card-wrap">
               <ItemCard
@@ -55,7 +58,7 @@ let title;
                 faces={obj.faces}
                 imageUrl={obj.imageUrl}
                 secondImageUrl={obj.secondImageUrl}
-         
+       
               />
 
               

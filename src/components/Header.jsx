@@ -1,7 +1,6 @@
 import React from "react";
 import { Menu } from "./Menu";
 
-
 export const Header = () => {
     return (
         <>
@@ -9,6 +8,7 @@ export const Header = () => {
       
       
             <header class="header">
+       
             <div class="logo-section">
             <div class="logotype">vasov</div>
         </div>
